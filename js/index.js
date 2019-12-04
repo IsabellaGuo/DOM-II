@@ -60,3 +60,22 @@ window.addEventListener("scroll", () =>{
    console.log ("scroll")
    document.querySelector("header").style.backgroundColor = "#51eaea";
 })
+
+// stop propagation
+myBtn = document.querySelector(".btn");
+myHome = document.querySelector(".home");
+
+myBtn.addEventListener("click", (event) =>{
+   console.log (`btn clicked`);
+   event.stopPropagation()
+   event.target.style.color = "#f09595"
+})
+myHome.addEventListener("click", () =>{
+   console.log (`click home`)
+})
+
+//preventDefault
+mainNav = document.querySelector(".nav")
+mainNav.addEventListener("click", (event) => {
+   event.preventDefault();
+})
