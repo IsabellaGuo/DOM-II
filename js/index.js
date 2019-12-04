@@ -48,3 +48,15 @@ funintheSun.addEventListener("dblclick", (event) =>{
    funintheSun.classList.toggle("change-color3");
 });
 
+// wheel
+document.querySelector(".home").addEventListener("wheel", myWheelFunc);
+
+function myWheelFunc(){
+   this.style.color = "#ff9d76";
+}
+
+//scroll
+window.addEventListener("scroll", () =>{
+   console.log ("scroll")
+   document.querySelector("header").style.backgroundColor = "#51eaea";
+})
